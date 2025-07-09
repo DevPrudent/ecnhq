@@ -1,0 +1,22 @@
+{
+  "name": "govity-static-site",
+  "version": "1.0.0",
+  "description": "Energy Commission of Nigeria Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "http-server -o -p 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "energy",
+    "commission",
+    "nigeria",
+    "static",
+    "website"
+  ],
+  "author": "ECN",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
