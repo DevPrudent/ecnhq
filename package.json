@@ -1,22 +1,13 @@
 {
-  "name": "govity-static-site",
+  "name": "govity-website",
   "version": "1.0.0",
-  "description": "Energy Commission of Nigeria Website",
-  "main": "index.js",
+  "description": "Government website with static HTML files",
+  "main": "server.js",
   "scripts": {
-    "dev": "http-server -o -p 3000",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
-  "keywords": [
-    "energy",
-    "commission",
-    "nigeria",
-    "static",
-    "website"
-  ],
-  "author": "ECN",
-  "license": "ISC",
   "dependencies": {
-    "http-server": "^14.1.1"
+    "express": "^4.18.2"
   }
 }
