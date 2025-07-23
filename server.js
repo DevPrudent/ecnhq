@@ -44,6 +44,10 @@ app.get('/bulletins', (req, res) => {
   res.sendFile(path.join(__dirname, 'bulletins.html'));
 });
 
+app.get('/news', (req, res) => {
+  res.sendFile(path.join(__dirname, 'news.html'));
+});
+
 // Catch all handler for other routes
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
