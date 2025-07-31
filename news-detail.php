@@ -219,7 +219,7 @@ $galleryImages = json_decode($article['gallery'], true) ?: [];
         <section class="news-details">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-8 col-lg-7">
+                    <div class="col-12">
                         <div class="news-details__left">
                             <div class="news-details__img">
                                 <?php if ($article['thumbnail']): ?>
@@ -277,41 +277,7 @@ $galleryImages = json_decode($article['gallery'], true) ?: [];
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="sidebar">
-                            <div class="sidebar__single sidebar__post">
-                                <h3 class="sidebar__title">Related Articles</h3>
-                                <ul class="sidebar__post-list list-unstyled">
-                                    <?php foreach ($relatedArticles as $related): ?>
-                                    <li>
-                                        <div class="sidebar__post-image">
-                                            <img src="<?php echo htmlspecialchars($related['thumbnail'] ?: 'assets/images/blog/lp-1-1.jpg'); ?>" alt="">
-                                        </div>
-                                        <div class="sidebar__post-content">
-                                            <h3>
-                                                <span class="sidebar__post-content-meta">
-                                                    <i class="fas fa-calendar"></i><?php echo date('M j, Y', strtotime($related['created_at'])); ?>
-                                                </span>
-                                                <a href="news-detail.php?slug=<?php echo $related['slug']; ?>"><?php echo htmlspecialchars($related['title']); ?></a>
-                                            </h3>
-                                        </div>
-                                    </li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </div>
-
-                            <div class="sidebar__single sidebar__comments">
-                                <h3 class="sidebar__title">Categories</h3>
-                                <ul class="sidebar__comments-list list-unstyled">
-                                    <li><a href="news.html">Energy Policy</a></li>
-                                    <li><a href="news.html">Renewable Energy</a></li>
-                                    <li><a href="news.html">Research & Development</a></li>
-                                    <li><a href="news.html">Events & Conferences</a></li>
-                                    <li><a href="news.html">Technology Innovation</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Sidebar removed -->
                 </div>
             </div>
         </section>
